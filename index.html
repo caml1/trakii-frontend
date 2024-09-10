@@ -1,14 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Device Localization</title>
+  <title>Trakii Dashboard</title>
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <h1>Map Localization Project</h1>
-  <div id="map"></div>
+  <!-- Header Section -->
+  <header>
+    <img src="/images/Trakii logo redondo .png" alt="Trakii Logo" class="header-logo">
+  </header>
+
+  <!-- Main Section -->
+  <section class="main-content">
+    <!-- Map Section -->
+    <div class="map-container">
+      <h2>Dispositivo de Juan</h2>
+      <div id="map"></div>
+      <img src="/images/Imagen TK71 4G.png" alt="Device" class="device-img">
+    </div>
+
+    <!-- Info Section (Battery and Address) -->
+    <div class="info-container">
+      <div class="info-box">
+        <h3>BATERÍA</h3>
+        <img src="/images/noun-battery-7191387-removebg-preview.png" alt="Battery" class="battery-icon">
+      </div>
+      <div class="info-box">
+        <h3>DIRECCIÓN</h3>
+        <p id="device-address">Cleveland, OH</p>
+      </div>
+    </div>
+  </section>
+
   <script src="js/script.js"></script>
 </body>
 </html>
