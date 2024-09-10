@@ -5,5 +5,5 @@ En este proyecto estoy demostrando las posibles aplicaciones de la API de google
 ## Instructions
 
 1. Clone the repository
-2. Add your Google Maps API key in `js/script.js` where it says `YOUR_API_KEY`
+2. Add your Google Maps API key in `js/script.js`
 3. Open `index.html` in your browser
