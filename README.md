@@ -1,6 +1,6 @@
-# Device Localization Map Project
+# Device Localization Map
 
-This project demonstrates how to use the Google Maps API and the browser's Geolocation API to localize a user's device and display their location on a map.
+En este proyecto estoy demostrando las posibles aplicaciones de la API de google para localizar los dispositivos de TRAKII
 
 ## Instructions
 
