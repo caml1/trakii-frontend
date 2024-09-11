@@ -1,39 +1,167 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trakii Dashboard</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Dashboard Design</title>
 </head>
+
 <body>
-  <!-- Header Section -->
-  <header>
-    <img src="/images/Trakii logo redondo .png" alt="Trakii Logo" class="header-logo">
-  </header>
 
-  <!-- Main Section -->
-  <section class="main-content">
-    <!-- Map Section -->
-    <div class="map-container">
-      <h2>Dispositivo de Juan</h2>
-      <div id="map"></div>
-      <img src="/images/Imagen TK71 4G.png" alt="Device" class="device-img">
+    <div class="container"> 
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/Trakii logo redondo .png">
+                    <h2>TRAKII<span class="danger">GO</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        person_outline
+                    </span>
+                    <h3>Users</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>History</h3>
+                </a>
+                <a href="#" class="active">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message_count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Sale List</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+
+        <!-- Main Content -->
+        <main>
+            <h1>Analytics</h1>
+                <!-- Analyses -->
+            <div class="analyse">
+                <div class="sales">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Traveled Distance</h3>
+                            <h1>589m</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>+81%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="visits">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Battery</h3>
+                            <img src="images/noun-battery-7191387-removebg-preview.png" alt="Battery" class="battery-icon">
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="percentage">
+                                <p>92%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="searches">
+                    <div class="status">
+                        <div class="info">
+                            <h3>Last Location</h3>
+                            <h1>Cleveland, OH</h1>
+                        </div>
+                        <div class="progress">
+                          <img src='images/Imagen TK71 4G.png'>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <!-- Main Section -->
+            <section class="main-content">
+                <!-- Map Section -->
+                 <div class="info-box">
+                    <h2>Dispositivo de Juan</h2>
+                    <div id="map"></div>
+                </div>
+
+
+                <!-- Info Section (Battery and Address) -->
+              
+              
+                </div>
+            </section>
+
+        </main>
+
     </div>
-
-    <!-- Info Section (Battery and Address) -->
-    <div class="info-container">
-      <div class="info-box">
-        <h3>BATERÍA</h3>
-        <img src="/images/noun-battery-7191387-removebg-preview.png" alt="Battery" class="battery-icon">
-      </div>
-      <div class="info-box">
-        <h3>DIRECCIÓN</h3>
-        <p id="device-address">Cleveland, OH</p>
-      </div>
-    </div>
-  </section>
-
-  <script src="js/script.js"></script>
+    
+    <script src="js/script.js"></script>
 </body>
 </html>

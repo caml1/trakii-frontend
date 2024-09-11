@@ -29,7 +29,7 @@ window.onload = function() {
 
 // Load the Google Maps API asynchronously
 const script = document.createElement('script');
-script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyDW2qWyNtCO55Qn0ffBfA_1OP5h5oiwCJg&callback=initMap`;
+script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyAbQAyEwwMt9Ev4USaO7JzWN6IKhLDnpno&callback=initMap`;
 script.async = true;
 script.defer = true;
 document.head.appendChild(script);
